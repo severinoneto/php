@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width", initial-scale="1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            background-color: powderblue;
+        }
+        input{
+            color: blue;
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+        input.buttom{
+            color: black;
+            background-color: lightgreen;
+            margin-left: 45%;
+        }
+        div{
+            width: 90%;
+            border: 2px solid ;
+            margin: auto;
+            margin-top: 10%;
+            padding: 10px 10px 10px 10px;
+        }
+        @media only screen and (min-width: 600px) {
+            div {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+<h1>Formulário</h1>
+<form method="get" action="formp.php">
+    Nome:<input type="text" name="nome"/><br/>
+    idade:<input type="number" name="idade"/><br/>
+    endereço:<input type="text" name="endereco"/><br/>
+    sexo:
+    <input type="radio" name="sexo" id="m" value="Homem" checked/>
+    <label for="m">Masculino<label/>
+    <input type="radio" name="sexo" id="f" value="mulher"/>
+    <label for="f">Feminino<label/><br/>
+    <input class="buttom" type="submit" value="enviar"/>
+</form>
+</div>
+</body>
+</html>
